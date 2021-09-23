@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .contenedor {
+    max-width: 1000px;
+    width: 100%;
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+  
+  .titulo{
+    font-size: 36px;
+    line-height: 44px;
+    color: #4e5150;
+    margin-bottom: 50px;
+  }
+  
+  .datos {
+    display: flex;
+  }
+  
+  .formulario {
+    width: 100%;
+  }
+  
+  .subtitulo {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .formulario-uno {
+    margin-bottom: 55px;
+  }
+  
+  .etiqueta{
+    font-size: 12px;
+    line-height: 15px;
+    color: #4f4f4f;
+    margin-bottom: 6px;
+  }
+  
+  .input-contenedor {
+    border: 1px solid #828282;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    color: #828282;
+  }
+  
+  .input-field {
+    font-size: 16px;
+    color: #000;
+    padding-left: 10px;
+    border-width: 0px;
+    outline-width: 0;
+  }
+  
+  .input-field:placeholder {
+    color: #828282;
+  }
+  
+  .caja {
+    margin-top: 22px;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .caja-texto {
+    margin-right: 7px;
+  }
+  
+  .pais-postal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .disenio {
+    float: right;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding: 17px 45px;
+    background-color: #f2994a;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid #f2994a;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .disenio:hover {
+    background-color: #fff;
+    color: #f2994a;
+  }
+  
+  .carta {
+    width: 100%;
+  }
+  
+  .tarjeta{
+    padding: 25px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    max-width: 380px;
+    margin-left: auto;
+  }
+  
+  .item {
+    display: flex;
+    width: 100%;
+  }
+  
+  .producto-img {
+    max-width: 135px;
+    width: 135px;
+    height: 135px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+  }
+  
+  .producto-nombre {
+    font-size: 16px;
+    line-height: 20px;
+    color: #4e5150;
+    margin-bottom: 8px;
+  }
+  
+  .descuento {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 135px;
+  }
+  
+  .precio {
+    font-size: 16px;
+    line-height: 20px;
+    color: #f2994a;
+  }
+  
+  .regular {
+    font-size: 12px;
+    line-height: 15px;
+    color: #4e5150;
+    text-decoration-line: line-through;
+    padding-left: 10px;
+  }
+  
+  .contador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 15px 13px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    width: 135px;
+  }
+  
+  .disenio-carta {
+    border: none;
+    outline-width: 0;
+  }
+  
+  .material-icono{
+    color: #828282;
+    padding: 4px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .cantidad {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    outline-width: 0;
+    font-size: 16px;
+    color: #333333;
+  }
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #bdbdbd;
+  }
+  
+  .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .carta-texto {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+  }
+  
+  .carta-precio {
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+  }
+  
+  
+  
+  @media screen and (max-width: 851px) {
+    .tarjeta{
+      margin-left: 10px;
+    }
+    .producto-image{
+      width: 122px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .datos {
+      flex-direction: column-reverse;
+    }
+    .tarjeta{
+      margin-left: 0;
+    }
+    .carta {
+      margin-bottom: 40px;
+    }
+    .heading {
+      font-size: 24px;
+    }
+    .producto-nombre{
+      font-size: 12px;
+    }
+    .precio {
+      font-size: 14px;
+    }
+    .regular {
+      font-size: 10px;
+    }
+    .carta-texto {
+      font-size: 14px;
+    }
+    .subtitulo {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .carta {
+      width: 100%;
+    }
+    .tarjeta{
+      width: 100%;
+    }
+    .contador {
+      width: 100%;
+      padding: 5px 10px;
+    }
+  }
+  
